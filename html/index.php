@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css?v=1">
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">
   <script src="js/modernizr-1.5.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Delius+Swash+Caps' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -20,7 +21,12 @@
     </header>
     
     <div id="main">
+      <div id="image_wrapper">
+        <h1>Free Smiles!</h1>
+        <span class="body_text">With so many millions of people smiling every moment of the day, we should be taking notice.</span>
         <div id="image_content"></div>
+        <span class="body_text small">This site displays a stream of images posted to Flickr and tagged with '<a href="http://www.flickr.com/photos/tags/smiling/" target="__blank">smiling</a>.' Code can be found on <a href="https://github.com/cbiggins/Freesmiles/" target="_blank">Github</a>.</span>
+      </div>
     </div>
     
     <footer>
@@ -65,6 +71,7 @@
                 // load the html
                 $('#image_content').html('');
                 $('#image_content').css('width', styleWidth + 'px');
+                $('#image_wrapper').css('width', styleWidth + 'px');
                 $('#image_content').append('<a id="newpic" href="'+data.img_url+'" target="_blank">');
                 $('#newpic').append(pic);
                 $('#image_content').append("<br />Photograph by " + data.owner_name + " - Flickr Profile <a href='"+data.owner_url+"' target='_blank'>here</a>.");

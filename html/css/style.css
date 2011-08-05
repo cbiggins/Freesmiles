@@ -98,7 +98,9 @@ body, select, input, textarea { color:#444; }
    you'll want to define those yourself. */ 
  
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Delius Swash Caps', cursive; font-weight: bold; text-rendering: optimizeLegibility; }
+
+h1 { color: white; font-size: 28px;}
 
 /* maxvoltar.com/archive/-webkit-font-smoothing */
 html { -webkit-font-smoothing: antialiased; }
@@ -265,6 +267,17 @@ button {  width: auto; overflow: visible; }
 #main {
     width: 100%;
     padding-top:40px;
+}
+
+#image_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+.body_text {
+  color: #999;
 }
 
 #image_content {
