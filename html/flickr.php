@@ -1,7 +1,6 @@
 <?php
+require_once('config.php');
 
-$flickr_key = 'fb26e8f53c83486a8c2bbb8e37328da5';
-$flickr_secret = 'e944111611ba37a2';
 $api_url = "http://api.flickr.com/services/rest/?format=php_serial&api_key={$flickr_key}";
 $request = $api_url."&method=flickr.photos.search&tags=smiling&per_page=1&safe_search=1&content_type=1&page={$_REQUEST['page']}";
 
